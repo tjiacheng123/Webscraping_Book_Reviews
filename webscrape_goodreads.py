@@ -32,8 +32,6 @@ book_review = doc.find_all(class_="reviewText stacked") # Obtain the review text
 
 reviews = []
 
-x= 0
-
 for review in book_review:
     try:
         full_review = review.find(style="display:none").get_text()
